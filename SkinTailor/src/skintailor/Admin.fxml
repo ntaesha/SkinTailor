@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="382.0" prefWidth="850.0" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skintailor.AdminController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="300.0">
+            <children>
+                <HBox spacing="20" alignment="CENTER"> <!-- Use HBox for horizontal layout -->
+                    <Label prefHeight="18.0" prefWidth="350.0" text="User  Management" styleClass="centered-bold-label" wrapText="true"/>
+                </HBox>
+                <TableView fx:id="userTable" prefHeight="318.0" prefWidth="230.0">
+                    <columns>
+                        <TableColumn fx:id="emailColumn" text="Email" />
+                        <TableColumn fx:id="usernameColumn" text="Username" />
+                    </columns>
+                </TableView>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button onAction="#addUser" text="Add User" styleClass="admin-button" />
+                        <Button onAction="#updateUser" text="Edit User" styleClass="admin-button" />
+                        <Button onAction="#deleteUser" text="Delete User" styleClass="admin-button" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox layoutX="391.0" prefHeight="218.0" prefWidth="474.0">
+            <children>
+                <HBox spacing="20" alignment="CENTER"> <!-- Use HBox for horizontal layout -->
+                    <Label prefHeight="18.0" prefWidth="350.0" text="Product Management" styleClass="centered-bold-label" wrapText="true"/>
+                </HBox>
+                <TableView fx:id="productTable" prefHeight="200" prefWidth="400">
+                    <columns>
+                        <TableColumn fx:id="productIdColumn" prefWidth="100" text="Product ID" />
+                        <TableColumn fx:id="productNameColumn" prefWidth="150" text="Product Name" />
+                        <TableColumn fx:id="productPriceColumn" prefWidth="100" text="Price" />
+                        <TableColumn fx:id="productImageColumn" prefWidth="150" text="Image Path" />
+                    </columns>
+                </TableView>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button onAction="#addProduct" text="Add Product" styleClass="admin-button" />
+                        <Button onAction="#updateProduct" text="Edit Product" styleClass="admin-button" />
+                        <Button onAction="#deleteProduct" text="Delete Product" styleClass="admin-button" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button fx:id="logoutButton" layoutX="378.0" layoutY="341.0" onAction="#logout" styleClass="admin-button" text="Logout" />
+    </children>
+</AnchorPane>

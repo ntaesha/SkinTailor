@@ -1,0 +1,29 @@
+/* Navbar styles */
+.navbar {
+    -fx-background-color: #5A4033;
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+.button:hover {
+    -fx-text-fill: #C28A75;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* Custom colours */
+.bg-custom-color {
+    -fx-background-color: #5A4033;
+}
+
+.custom-bg-color {
+    -fx-background-color: #D4BBAF;
+}

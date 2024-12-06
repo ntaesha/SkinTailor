@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skintailor.HomepageController">
+    <VBox spacing="10" alignment="CENTER">
+        <!-- Navigation Bar -->
+        <HBox spacing="10" alignment="CENTER" styleClass="navbar" style="-fx-background-color: #432818; -fx-padding: 10;">
+            <Button text="Products" onAction="#handleProducts" styleClass="nav-button"/>
+            <Button text="Cart" onAction="#handleCart" styleClass="nav-button"/>
+            <Button text="Logout" onAction="#handleLogout" styleClass="nav-button"/>
+        </HBox>
+
+        <!-- Products Section -->
+        <Text text="Available Products" styleClass="header" />
+        <GridPane fx:id="productGrid" hgap="10" vgap="10" alignment="CENTER" />
+    </VBox>
+</AnchorPane>

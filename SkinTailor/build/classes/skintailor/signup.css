@@ -1,0 +1,41 @@
+/* signup.css */
+
+/* General styles */
+.header {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-text-fill: #432818; /* Dark brown color for the header */
+}
+
+/* Style for the VBox containing the signup form */
+.login-form {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 1);
+}
+
+/* Style for the buttons */
+.login-button {
+    -fx-background-color: #432818; /* Dark brown */
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+}
+
+.login-button:hover {
+    -fx-background-color: #5a3a2a; /* Lighter brown on hover */
+}
+
+.signup-button, .back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #432818; /* Dark brown */
+    -fx-font-size: 14;
+    -fx-padding: 10 20;
+}
+
+.signup-button:hover, .back-button:hover {
+    -fx-text-fill: #5a3a2a; /* Change text color on hover */
+}

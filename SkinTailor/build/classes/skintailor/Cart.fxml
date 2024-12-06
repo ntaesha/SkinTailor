@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skintailor.CartController">
+    <VBox spacing="10" alignment="CENTER">
+        <!-- Navigation Bar -->
+        <HBox spacing="10" alignment="CENTER" styleClass="navbar" style="-fx-background-color: #432818; -fx-padding: 10;">
+            <Button fx:id="homeButton" text="Home" onAction="#navigateToHomepage" />
+            <Button fx:id="cartButton" text="Cart" onAction="#navigateToCart" />
+            <Button fx:id="logoutButton" text="Logout" onAction="#logout" />
+        </HBox>
+    <Label text="Your Cart" styleClass="header" />
+    
+    <ListView fx:id="cartListView" />
+    <Text fx:id="totalPriceText" />
+    
+    <Button text="Checkout" onAction="#handleCheckout" />
+    </VBox>
+</AnchorPane>

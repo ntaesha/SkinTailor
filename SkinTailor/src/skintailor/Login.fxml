@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="skintailor.LoginController" stylesheets="@login.css">
+    <VBox spacing="20" alignment="CENTER" style="-fx-background-color: #f9f9f9; -fx-padding: 20;">
+        <Text text="Login" styleClass="header"/>
+        
+        <VBox spacing="10" alignment="CENTER" styleClass="login-form">
+            <TextField fx:id="usernameField" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Button text="Login" onAction="#handleLogin" styleClass="login-button"/>
+        </VBox>
+        
+        <Text text="Don't have an account? Sign up here!" style="-fx-font-size: 14;"/>
+        <Button text="Sign Up" onAction="#navigateToSignUp" styleClass="signup-button"/>
+    </VBox>
+</AnchorPane>
